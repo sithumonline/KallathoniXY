@@ -77,6 +77,23 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-github"
+          title="Follow us on github"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://github.com/ebonynon"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-github"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
     </List>
   );
 }

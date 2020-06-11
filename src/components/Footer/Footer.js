@@ -36,7 +36,7 @@ export default function Footer(props) {
               src="https://github.com/ebonynon/KallathoniXY/workflows/Build/badge.svg?branch=master&event=push"
             />
           </a>
-          &nbsp; &nbsp; &copy; {1900 + new Date().getYear()} , made with{" "}
+          &nbsp;&copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="https://github.com/ebonynon"
