@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: connect ENETUNREACH 2606:4700::6810:1323:443 - Local (:::0)
+  Error: connect ENETUNREACH 2606:4700::6810:1b23:443 - Local (:::0)
       at internalConnect (net.js:882:16)
       at defaultTriggerAsyncIdScope (internal/async_hooks.js:294:19)
       at emitLookup (net.js:1029:9)
@@ -26,9 +26,9 @@ Trace:
 
 npm manifest: 
   {
-    "name": "material-kit-react",
+    "name": "KallathoniXY",
     "version": "1.9.0",
-    "description": "Material Kit React. Coded by Creative Tim",
+    "description": "Website for new product",
     "private": true,
     "main": "src/index.js",
     "dependencies": {
@@ -36,17 +36,19 @@ npm manifest:
       "@material-ui/icons": "4.9.1",
       "classnames": "2.2.6",
       "history": "4.10.1",
+      "material-auto-rotating-carousel": "^3.0.2",
       "moment": "2.26.0",
       "node-sass": "4.14.1",
       "nouislider": "14.5.0",
       "prop-types": "15.7.2",
+      "pure-react-carousel": "^1.27.1",
       "react": "16.13.1",
       "react-datetime": "2.16.3",
       "react-dom": "16.13.1",
       "react-router-dom": "5.2.0",
       "react-scripts": "3.4.1",
       "react-slick": "0.26.1",
-      "react-swipeable-views": "0.13.9"
+      "react-swipeable-views": "^0.13.9"
     },
     "devDependencies": {
       "@babel/cli": "7.10.1",
@@ -4036,10 +4038,20 @@ Lockfile:
       object-keys "^1.1.1"
       regexp.prototype.flags "^1.2.0"
   
+  deep-freeze@0.0.1:
+    version "0.0.1"
+    resolved "https://registry.yarnpkg.com/deep-freeze/-/deep-freeze-0.0.1.tgz#3a0b0005de18672819dfd38cd31f91179c893e84"
+    integrity sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
+  
   deep-is@~0.1.3:
     version "0.1.3"
     resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
     integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
+  
+  deepmerge@^2.2.1:
+    version "2.2.1"
+    resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
+    integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
   
   default-compare@^1.0.0:
     version "1.0.0"
@@ -4427,6 +4439,13 @@ Lockfile:
     version "2.0.3"
     resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
     integrity sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==
+  
+  equals@^1.0.5:
+    version "1.0.5"
+    resolved "https://registry.yarnpkg.com/equals/-/equals-1.0.5.tgz#212062dde5e1a510d955f13598efcc6a621b6ace"
+    integrity sha1-ISBi3eXhpRDZVfE1mO/MamIbas4=
+    dependencies:
+      jkroso-type "1"
   
   errno@^0.1.3, errno@~0.1.7:
     version "0.1.7"
@@ -7071,6 +7090,11 @@ Lockfile:
       import-local "^2.0.0"
       jest-cli "^24.9.0"
   
+  jkroso-type@1:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/jkroso-type/-/jkroso-type-1.1.1.tgz#bc4ced6d6c45fe0745282bafc86a9f8c4fc9ce61"
+    integrity sha1-vEztbWxF/gdFKCuvyGqfjE/JzmE=
+  
   js-base64@^2.1.8:
     version "2.5.2"
     resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.2.tgz#313b6274dda718f714d00b3330bbae6e38e90209"
@@ -7719,6 +7743,22 @@ Lockfile:
       micromatch "^3.0.4"
       resolve "^1.4.0"
       stack-trace "0.0.10"
+  
+  material-auto-rotating-carousel@^3.0.2:
+    version "3.0.2"
+    resolved "https://registry.yarnpkg.com/material-auto-rotating-carousel/-/material-auto-rotating-carousel-3.0.2.tgz#a4d41b7fa54e328f0d5687648277c96acf8360d6"
+    integrity sha512-ql/jiV0R9xsOUVn7JNOomvgXHkVFYjmClei+jsfgpOlHXsXztqfOFl6rb0mLbBIpg4mRzTV5oNYOGAM3MvXETA==
+    dependencies:
+      classnames "^2.2.5"
+      material-ui-dots "^2.0.0"
+      prop-types "^15.5.8"
+  
+  material-ui-dots@^2.0.0:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/material-ui-dots/-/material-ui-dots-2.0.1.tgz#1f17725cace95794d4f4d1c1bfd0e6239f485b73"
+    integrity sha512-nVj7M6IMUPAHVnXQMf0otfv+zrgg0WFMgV6IvXu3/N16Tivum0cdiBw4z0UzDiiFd1fYg4j2GoTF/ej0ZFYB6Q==
+    dependencies:
+      prop-types "^15.5.10"
   
   md5.js@^1.3.4:
     version "1.3.5"
@@ -9761,7 +9801,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.4"
   
-  prop-types@15.7.2, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9844,6 +9884,17 @@ Lockfile:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
     integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  
+  pure-react-carousel@^1.27.1:
+    version "1.27.1"
+    resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.27.1.tgz#33cab58c141a75b138d1715c84369e6f523b37d7"
+    integrity sha512-FAWT9xGzktXBokOmHNxuTY4KzJOyZFtOpU725aPB71yThB/STuVqZXP/WYnG/Uzp2ydbas2HfaFHGAXKy/0ezQ==
+    dependencies:
+      "@babel/runtime" "^7.5.5"
+      deep-freeze "0.0.1"
+      deepmerge "^2.2.1"
+      equals "^1.0.5"
+      prop-types "^15.6.2"
   
   q@^1.1.2:
     version "1.5.1"
@@ -10126,7 +10177,7 @@ Lockfile:
       react-swipeable-views-core "^0.13.7"
       shallow-equal "^1.2.1"
   
-  react-swipeable-views@0.13.9:
+  react-swipeable-views@^0.13.9:
     version "0.13.9"
     resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.13.9.tgz#d6a6c508bf5288ad55509f9c65916db5df0f2cec"
     integrity sha512-WXC2FKYvZ9QdJ31v9LjEJEl1bA7E4AcaloTkbW0uU0dYf5uvv4aOpiyxubvOkVl1a5L2UAHmKSif4TmJ9usrSg==
