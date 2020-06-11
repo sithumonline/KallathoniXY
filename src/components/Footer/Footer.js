@@ -20,17 +20,23 @@ export default function Footer(props) {
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.center}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          <a href="https://github.com/ebonynon/KallathoniXY">
+            <img
+              alt="ebonynon/KallathoniXY Build"
+              src="https://github.com/ebonynon/KallathoniXY/workflows/Build/badge.svg?branch=master&event=push"
+            />
+          </a>
+          &nbsp; &nbsp; &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="https://github.com/ebonynon"
@@ -47,5 +53,5 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
 };
